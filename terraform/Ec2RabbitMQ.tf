@@ -183,4 +183,7 @@ resource "aws_instance" "Instance_20_7" {
       HETZNER_DOMAIN_NAME = "pam4.com"
     }
   }
+    tags = {
+    Name           = "RabbitMQ1"
+  }
 }

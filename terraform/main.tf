@@ -107,7 +107,7 @@ resource "aws_security_group" "sg_80_433_RMQ" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = local.enabled_ip_list
+    cidr_blocks = ["0.0.0.0/0"]#local.enabled_ip_list
   }
 
 
